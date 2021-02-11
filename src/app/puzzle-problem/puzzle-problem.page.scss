@@ -1,0 +1,300 @@
+
+#page1{
+ display: none;
+}
+#instruction{
+   display: block;
+   align-items: center;
+   
+   
+}
+#rules {
+   margin-left: 35%;
+   
+}
+#upImage{
+   margin-left: 30%;
+   opacity: 0.3;
+}
+#rules{
+   text-align: center;
+   font-size: 25px;
+   font-weight: bold;
+   position: absolute;
+   top: 0px;
+}
+#btnChangePage{
+   margin-left: 45%;
+}
+#backgroundForGame{
+    width: 100%;
+    height: 100%;
+}
+#HouseOnTheLevel1{
+    position: absolute;
+    top: 60%;
+    display: none;
+     
+ }
+ #HouseOnTheLevel2{
+    position: absolute;
+    top: 60%;
+    display: none;
+     
+ }
+ #HouseOnTheLevel3{
+    position: absolute;
+    top: 60%;
+    display: none;
+     
+ }
+ #HouseOnTheLevel4{
+    position: absolute;
+    top: 60%;
+    display: none;
+ }
+
+ #HouseOnTheLevel11{
+    position: absolute;
+    top: 60%;
+    display: none;
+     
+ }
+ #HouseOnTheLevel22{
+    position: absolute;
+    top: 60%;
+    display: none;
+     
+ }
+ #HouseOnTheLevel33{
+    position: absolute;
+    top: 60%;
+    display: none;
+     
+ }
+ #HouseOnTheLevel44{
+    position: absolute;
+    top: 60%;
+    display: none;
+ }
+
+ #HouseOnTheLevel111{
+    position: absolute;
+    top: 60%;
+    display: none;
+     
+ }
+ #HouseOnTheLevel222{
+    position: absolute;
+    top: 60%;
+    display: none;
+     
+ }
+ #HouseOnTheLevel333{
+    position: absolute;
+    top: 60%;
+    display: none;
+     
+ }
+ #HouseOnTheLevel444{
+    position: absolute;
+    top: 60%;
+    display: none;
+ }
+
+#floatingHouse{
+   position: absolute;
+   top: -1200px;
+   //top: -150px;
+    animation-name: house1;
+    animation-duration: 8s;
+    animation-delay: 1s;
+    animation-play-state: running;
+}
+#floatingHouse1{
+    position: absolute;
+     //top: -150px;
+     top: -1200px;
+     animation-name: house2;
+     animation-duration: 10s;
+     animation-delay: 5s;
+     animation-play-state: running;
+ }
+ #floatingHouse2{
+    position: absolute;
+    //top: -150px;
+    top: -1200px;
+     animation-name: house3;
+     animation-duration: 10s;
+     animation-delay: 3s;
+     animation-play-state: running;
+ }
+#float1{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+}
+#float2{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+#float3{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+#scoreDisplay {
+    position: absolute;
+    top: 25%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 20%;
+    display: flex;
+}
+
+@keyframes house1 {
+    0%   {top: -1200px;}
+    100% {top: 466px;}
+    
+}
+@keyframes house2 {
+    0%   {top: -1200px;}
+    100% {top: 466px;}
+    
+}
+@keyframes house3 {
+    0%   {top: -1200px;}
+    100% {top: 466px;}
+    
+}
+@media only screen and (max-width: 600px) {
+    #backgroundForGame{
+        width: 100%;
+        height: 600px;
+    }
+    #HouseOnTheLevel1{
+        width: 150px;
+        top: 290px;
+        left: 58%;
+         
+     }
+     #HouseOnTheLevel2{
+        width: 150px;
+        top: 140px;
+        left: 7%;
+         
+     }
+     #HouseOnTheLevel3{
+        width: 150px;
+        top: 40px;
+        left: 60%;
+         
+     }
+     #HouseOnTheLevel4{
+        width: 150px;
+        top: 462px;
+        left: 7%;
+     }
+
+     #HouseOnTheLevel11{
+        width: 150px;
+        top: 290px;
+        left: 55%;
+         
+     }
+     #HouseOnTheLevel22{
+        width: 150px;
+        top: 140px;
+        left: 4%;
+         
+     }
+     #HouseOnTheLevel33{
+        width: 150px;
+        top: 40px;
+        left: 62%;
+         
+     }
+     #HouseOnTheLevel44{
+        width: 150px;
+        top: 462px;
+        left: 25%;
+     }
+
+     #HouseOnTheLevel111{
+        width: 150px;
+        top: 290px;
+        left: 52%;
+         
+     }
+     #HouseOnTheLevel222{
+        width: 150px;
+        top: 140px;
+        left: 1%;
+         
+     }
+     #HouseOnTheLevel333{
+        width: 150px;
+        top: 40px;
+        left: 64%;
+         
+     }
+     #HouseOnTheLevel444{
+        width: 150px;
+        top: 462px;
+        left: 43%;
+     }
+
+    #floatingHouse{
+        width: 150px;
+        left: 20px;
+    }
+    #floatingHouse1{
+        width: 150px;
+        left: 250px;
+    }
+    #floatingHouse2{
+        width: 150px;
+        left: 150px;
+    }
+    #float1{
+        height: 30px;
+        width: 100px;
+        position: absolute;
+        top: 400px;
+        left: 60%;
+    }
+    #float2{
+        height: 30px;
+        width: 100px;
+        position: absolute;
+        top: 250px;
+        left: 10%;
+    }
+    #float3{
+        height: 30px;
+        width: 80px;
+        position: absolute;
+        top: 150px;
+        left: 70%;
+    }
+    #scoreDisplay {
+        position: absolute;
+        top: 20%;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #btnChangePage{
+      margin-left: 0%;
+      width: 100%;
+   }
+   #upImage{
+      margin-left: 0%;
+   }
+   #rules{
+      top: 25%;
+      margin-left: 0%;
+   }
+}
+

@@ -1,0 +1,57 @@
+<ion-content>
+  <div id="container">
+    <div id="head">
+      <h1><strong>PLAY & LEARN</strong></h1>
+      <h6>Welcome to Play & Learn education.</h6>
+    </div>
+    <img src="./assets/images/funStudy.png" id="p2Image1">
+    <div id="gap"></div>
+    <div id="courseNames">Courses</div>
+
+    <ion-slides [options]="slideOptions" pager="true" #flags>
+      <ion-slide *ngFor="let c of courses">
+
+        <!-- <ion-button (click)="onBack()" color="slateblue" id="frwrd">
+          <img src="./assets/images/back.png" />
+
+        </ion-button>-->
+
+        <ion-card id="card">
+          <img src="{{c.imageUrl}}" id="slidePic1" [routerLink]="'/math'">
+          <ion-card-header>
+            <ion-card-title id="title" class="card1">
+              {{c.text}}
+            </ion-card-title>
+          </ion-card-header>
+        </ion-card>
+        <ion-card id="card">
+          <img src="{{c.imageUrl1}}" id="slidePic1" [routerLink]="'/puzzle-problem'">
+          <ion-card-header>
+            <ion-card-title id="title" class="card2">
+              {{c.text1}}
+            </ion-card-title>
+          </ion-card-header>
+        </ion-card>
+        <ion-card id="card">
+          <img src="{{c.imageUrl2}}" id="slidePic1">
+          <ion-card-header>
+            <ion-card-title id="title" class="card3">
+              {{c.text2}}
+            </ion-card-title>
+          </ion-card-header>
+        </ion-card>
+
+        <!--<ion-button (click)="onForward()" color="slateblue" id="frwrd">
+          <img src="./assets/images/forward.png" />
+        </ion-button>-->
+
+      </ion-slide>
+    </ion-slides>
+    <div id="backIcon">
+      Math exercise
+    </div>
+    <div id="forwardIcon"> Example </div>
+    <div id="videoId"> Video </div>
+
+  </div>
+</ion-content>

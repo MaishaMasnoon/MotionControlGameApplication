@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="'/first-page'">
+        <ion-icon name="storefront-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Learn Math</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="instruction">
+    <img src="./assets/images/upTranparent.jpg" id="upImage">
+    <div id="rules">
+      Move the device left and right<br><br>
+      to move the falling houses<br><br>
+      count the number of houses<br><br>
+      on the ground
+    </div>
+  </div>
+  <div id="page1">
+    <img src="./assets/images/gameBackground.jpg" id="backgroundForGame">
+    <img src="./assets/images/floating levels.jpg" id="float1">
+    <img src="./assets/images/floating levels.jpg" id="float2">
+    <img src="./assets/images/floating levels.jpg" id="float3">
+
+    <div id="HouseOnTheLevel1">
+      <img src="./assets/images/up-house2 (1).png">
+    </div>
+    <div id="HouseOnTheLevel2">
+      <img src="./assets/images/up-house2 (1).png">
+    </div>
+    <div id="HouseOnTheLevel3">
+      <img src="./assets/images/up-house2 (1).png">
+    </div>
+    <div id="HouseOnTheLevel4">
+      <img src="./assets/images/up-house2 (1).png">
+    </div>
+
+    <div id="HouseOnTheLevel11">
+      <img src="./assets/images/up-house2 (1).png">
+    </div>
+    <div id="HouseOnTheLevel22">
+      <img src="./assets/images/up-house2 (1).png">
+    </div>
+    <div id="HouseOnTheLevel33">
+      <img src="./assets/images/up-house2 (1).png">
+    </div>
+    <div id="HouseOnTheLevel44">
+      <img src="./assets/images/up-house2 (1).png">
+    </div>
+
+    <div id="HouseOnTheLevel111">
+      <img src="./assets/images/up-house2 (1).png">
+    </div>
+    <div id="HouseOnTheLevel222">
+      <img src="./assets/images/up-house2 (1).png">
+    </div>
+    <div id="HouseOnTheLevel333">
+      <img src="./assets/images/up-house2 (1).png">
+    </div>
+    <div id="HouseOnTheLevel444">
+      <img src="./assets/images/up-house2 (1).png">
+    </div>
+
+    <div id="floatingHouse">
+      <img src="./assets/images/up-house2 (1).png">
+    </div>
+    <div id="floatingHouse1">
+      <img src="./assets/images/up-house2 (1).png">
+    </div>
+    <div id="floatingHouse2">
+      <img src="./assets/images/up-house2 (1).png">
+    </div>
+    <div id="scoreDisplay">
+      Number of houses landed:
+      <div id="scoreDisplay1">
+        total
+      </div>
+    </div>
+  </div>
+
+  <ion-button (click)="changePage()" id="btnChangePage">
+    Let's Begin
+  </ion-button>
+
+</ion-content>

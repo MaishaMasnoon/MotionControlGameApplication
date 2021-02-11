@@ -1,0 +1,196 @@
+<ion-toolbar color="tertiary">
+  <ion-buttons slot="start">
+    <ion-button [routerLink]="'/first-page'">
+      <ion-icon name="storefront-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-title>Learn Math</ion-title>
+</ion-toolbar>
+<ion-content>
+  <div id="hidden">
+    <div id="insTitle">Instructions</div>
+    <div id="insDes">
+      Touch the rabbits and collect the carrots<br><br>
+      Count the number of carrots you have collected<br><br>
+      Ready to do some fun exercise!
+    </div>
+    <img src="./assets/images/giphy.gif" id="insRabbit" />
+  </div>
+
+  <div id="main">
+    <div id="mainBackground">
+      <img src="./assets/images/unnamed.jpg" id="mathBackground" />
+    </div>
+    <div id="rabbitBtn1" (click)="rabbit1()">
+      <img src="./assets/images/carrot1.png" id="btncarrot1" />
+      <img src="./assets/images/bunnyRunning1.gif" />
+    </div>
+
+    <div id="rabbitBtn2" (click)="rabbit2()">
+      <div id="btncarrot2">
+        <img src="./assets/images/carrot1.png" />
+      </div>
+      <img src="./assets/images/bunnyRunning2.gif" />
+    </div>
+
+    <div id="rabbitBtn3" (click)="rabbit3()">
+      <div id="btncarrot3">
+        <img src="./assets/images/carrot1.png" />
+      </div>
+      <img src="./assets/images/bunnyRunning3.gif" />
+    </div>
+    <div id="carrots">
+      <div id="totalNumber">
+        Total number of carrots collected =
+      </div>
+      <div id="number1">
+        1
+      </div>
+      <div id="carrot1">
+        <img src="./assets/images/carrot1.png" />
+      </div>
+      <div id="plus1">+</div>
+      <div id="number2">
+        1
+      </div>
+      <div id="carrot2">
+        <img src="./assets/images/carrot1.png" />
+      </div>
+      <div id="plus2">+</div>
+      <div id="number3">
+        1
+      </div>
+      <div id="carrot3">
+        <img src="./assets/images/carrot1.png" />
+      </div>
+      <div id="equals">
+        =
+      </div>
+      <div id="input">
+        <ion-input type="text" [(ngModel)]="numOfCarrots"></ion-input>
+      </div>
+    </div>
+    <div id="showResult">
+      <p id="correctAnswer"></p>
+    </div>
+  </div>
+
+  <div id="page3">
+    <div id="ball1">
+      <img src="./assets/images/ballRolling(1).gif" />
+    </div>
+    <div id="box">
+      <p id="L"></p>
+      <p id="BL"></p>
+    </div>
+    <div id="box1">
+      <p id="L1"></p>
+      <p id="BL1"></p>
+    </div>
+    <div>
+      <img src="./assets/images/cutePuzzle.jpg" id="mazePic" />
+    </div>
+  </div>
+
+  <!--
+    Page3 for Puzzle solving
+    <div id="mulBrickC1">
+      <div id="brickC1"></div>
+      <div id="brickC2"></div>
+    </div>
+    <div id="mulBrickC5">
+      <div id="brickC9"></div>
+      <div id="brickC10"></div>
+    </div>
+    <div id="mulBrickC2">
+      <div id="brickC3"></div>
+      <div id="brickC4"></div>
+    </div>
+
+    <div id="brickR1"></div>
+    <div id="mulBrickC3">
+      <div id="brickC5"></div>
+      <div id="brickC6"></div>
+    </div>
+    <div id="mulBrickR2">
+      <div id="brickR2"></div>
+      <div id="brickR3"></div>
+    </div>
+
+
+    <div id="brickR4"></div>
+    <div id="brickR5"></div>
+
+    <div id="mulBrickR6">
+      <div id="brickR8"></div>
+      <div id="brickR6"></div>
+    </div>
+
+    <div id="brickR7"></div>
+
+
+    <div id="brickC7"></div>
+    <div id="brickC8"></div>
+  -->
+
+
+
+
+  <div id="page4">
+    <audio controls autoplay style="position: absolute; top:-100px;">
+      <source src="./assets/images/Kidsgame.mp3" type="audio/mpeg">
+    </audio>
+    <div id="fish">
+      <img src="./assets/images/nemo.png" id="fishPic" />
+    </div>
+    <div id="shark">
+      <img src="./assets/images/shark.gif" id="sharkPic" />
+    </div>
+    <div id="shark1">
+      <img src="./assets/images/shark.gif" id="sharkPic" />
+    </div>
+    <div id="dragonFruit">
+      <img src="./assets/images/dragonFruit.gif" id="sharkPic" />
+    </div>
+    <div id="grape">
+      <img src="./assets/images/grape2.gif" id="sharkPic" />
+    </div>
+    <div id="apple">
+      <img src="./assets/images/apple.gif" id="sharkPic" />
+    </div>
+    <div id="fruitScore">
+      <p id="dragonFruitCount"></p>
+      <p id="grapesCount"></p>
+      <p id="applesCount"></p>
+      <p id="result"></p>
+    </div>
+    <div id="underWaterBackground">
+      <!--<p id="fishTop"></p>
+      <p id="sharkTop"></p>
+      <p id="fishLeft"></p>
+      <p id="fishDead"></p>
+      <p id="fishNotDead"></p>-->
+
+
+      <img src="./assets/images/underWater2.gif" id="underWater" />
+    </div>
+    <div id="scoreForD">
+      dragonFruits score 1
+    </div>
+    <div id="scoreForG">
+      grapes score 1
+    </div>
+    <div id="scoreForA">
+      apples score 1
+    </div>
+  </div>
+  <div id="page4Instruction">
+    <div id="page4Instruction">
+      Move the fish by moving<br><br>
+      the device around<br><br>
+      to collect the fruits<br><br>
+    </div>
+    <img src="./assets/images/unnamed.gif" id="insRabbit" />
+  </div>
+  <ion-button (click)="next()" id="next">NEXT</ion-button>
+</ion-content>

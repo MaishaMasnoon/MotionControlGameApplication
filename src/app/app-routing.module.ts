@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'first-page',
+    loadChildren: () => import('./first-page/first-page.module').then( m => m.FirstPagePageModule)
+  },
+  {
+    path: 'math',
+    loadChildren: () => import('./math/math.module').then( m => m.MathPageModule)
+  },
+  {
+    path: 'puzzle-problem',
+    loadChildren: () => import('./puzzle-problem/puzzle-problem.module').then( m => m.PuzzleProblemPageModule)
+  },
 ];
 
 @NgModule({
