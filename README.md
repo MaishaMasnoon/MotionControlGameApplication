@@ -1,4 +1,3 @@
-# Learn Japanese with Maruko
-## React Native Language Learning Application
+# Device Motion Control Gaming Application
 
-This is an android mobile web application created using Ionic framework.
+Developed an android mobile web application created using Ionic framework and TypeScript.
